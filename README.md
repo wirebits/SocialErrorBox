@@ -12,14 +12,6 @@ A tool which generates error message boxes for social engineering and fun
 # OS Support
 Windows
 
-# New Features Added!
-- `for` Loop added.<br>
-- Next line function added.<br>
-- TYPE and TYNL supports " ".<br>
-- Multiple statements are supported inside for loop.<br>
-- Restrict PRESS mnemonic inside for loop.<br>
-- WRITE function added.<br>
-
 # Setup
 Make sure the latest python and pip3 is installed on your system (Windows/Linux/MacOS).<br>
 
@@ -74,6 +66,69 @@ Make sure the latest python and pip3 is installed on your system (Windows/Linux/
   <th>RUN</th>
   <th>It run the box and its hidden command.</th>
   <th>RUN game code python Test.py</th>
+ </tr>
+</table>
+
+# Buttons and Icon
+
+<table>
+ <tr>
+  <th>Button Input</th>
+  <th>Button Output</th>
+ </tr>
+ <tr>
+  <th>0</th>
+  <th>OK Button</th>
+ </tr>
+  <tr>
+  <th>1</th>
+  <th>OK and Cancel Buttons</th>
+ </tr>
+  <tr>
+  <th>2</th>
+  <th>Abort, Retry and Ignore Buttons</th>
+ </tr>
+ <tr>
+  <th>3</th>
+  <th>Yes, No and Cancel Buttons</th>
+ </tr>
+  <tr>
+  <th>4</th>
+  <th>Yes and No Buttons</th>
+ </tr>
+  <tr>
+  <th>5</th>
+  <th>Retry and Cancel Buttons</th>
+ </tr>
+</table>
+<table>
+ <tr>
+  <th>Icon Input</th>
+  <th>Icon Output</th>
+ </tr>
+ <tr>
+  <th>0</th>
+  <th>No Icon</th>
+ </tr>
+ <tr>
+  <th>16</th>
+  <th>Critical Icon ❌</th>
+ </tr>
+ <tr>
+  <th>32</th>
+  <th>Question Icon ❓</th>
+ </tr>
+ <tr>
+  <th>48</th>
+  <th>Warning Icon ⚠</th>
+ </tr>
+ <tr>
+  <th>64</th>
+  <th>Info Icon ❗</th>
+ </tr>
+ <tr>
+  <th>4096</th>
+  <th>System Modal Icon</th>
  </tr>
 </table>
 
