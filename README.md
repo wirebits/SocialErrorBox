@@ -147,7 +147,7 @@ Done!
 ```
 VAR game TITLE Skateboarder MSG Do you want to try again? BUTTON 3 ICON 32
 ```
-after click on ```Convert``` button, the arduino script of the following mnemonic is :<br>
+after click on ```Convert``` button, the vb script of the following mnemonic is :<br>
 
 ```
 game = MsgBox("Do you want to try again?", 3+32, "Skateboarder")
@@ -158,7 +158,7 @@ Just save this code in the tool and run.<br>
 ```
 REDO 6 game TITLE Skateboarder MSG Do you want to try again? BUTTON 3 ICON 32
 ```
-after click on ```Convert``` button, the arduino script of the following mnemonic is :<br>
+after click on ```Convert``` button, the vb script of the following mnemonic is :<br>
 ```
 For i = 1 to 6
     game = MsgBox("Do you want to try again?", 3+32, "Skateboarder")
@@ -170,7 +170,7 @@ Just save this code in the tool and run.<br>
 ```
 INF game TITLE Skateboarder MSG Do you want to try again? BUTTON 3 ICON 32
 ```
-after click on ```Convert``` button, the arduino script of the following mnemonic is :<br>
+after click on ```Convert``` button, the vb script of the following mnemonic is :<br>
 ```
 Do
 game = MsgBox("Do you want to try again?", 3+32, "Skateboarder")
@@ -184,7 +184,7 @@ SET runcode
 VAR game TITLE Skateboarder MSG Do you want to try again? BUTTON 3 ICON 32
 RUN game runcode notepad
 ```
-after click on ```Convert``` button, the arduino script of the following mnemonic is :<br>
+after click on ```Convert``` button, the vb script of the following mnemonic is :<br>
 ```
 Dim runcode
 Set runcode = WScript.CreateObject("WScript.Shell")
