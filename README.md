@@ -140,3 +140,57 @@ Make sure the latest python and pip3 is installed on your system (Windows/Linux/
 5. Save the VB Script.<br>
 6. Double click on the vb script file.<br>
 Done!
+
+# Examples
+## Example - 1 : Simple Error Message Box for a game
+
+```
+VAR game TITLE Skateboarder MSG Do you want to try again? BUTTON 3 ICON 32
+```
+after click on ```Convert``` button, the arduino script of the following mnemonic is :<br>
+
+```
+game = MsgBox("Do you want to try again?", 3+32, "Skateboarder")
+```
+Just save this code in the tool and run.<br>
+
+## Example - 2 : Simple Error Message Box for a game for 6 times
+```
+REDO 6 game TITLE Skateboarder MSG Do you want to try again? BUTTON 3 ICON 32
+```
+after click on ```Convert``` button, the arduino script of the following mnemonic is :<br>
+```
+For i = 1 to 6
+    game = MsgBox("Do you want to try again?", 3+32, "Skateboarder")
+Next
+```
+Just save this code in the tool and run.<br>
+
+## Example - 3 : Simple Error Message Box for a game infinite times
+```
+INF game TITLE Skateboarder MSG Do you want to try again? BUTTON 3 ICON 32
+```
+after click on ```Convert``` button, the arduino script of the following mnemonic is :<br>
+```
+Do
+game = MsgBox("Do you want to try again?", 3+32, "Skateboarder")
+Loop
+```
+Just save this code in the tool and run.<br>
+
+## Example - 4 : Run other commands or other scripts with simple error message box
+```
+SET runcode
+VAR game TITLE Skateboarder MSG Do you want to try again? BUTTON 3 ICON 32
+RUN game runcode notepad
+```
+after click on ```Convert``` button, the arduino script of the following mnemonic is :<br>
+```
+Dim runcode
+Set runcode = WScript.CreateObject("WScript.Shell")
+game = MsgBox("Do you want to try again?", 3+32, "Skateboarder")
+If game = 1 Then
+    runcode.Run "notepad", 1, True
+End If
+```
+Just save this code in the tool and run.<br>
