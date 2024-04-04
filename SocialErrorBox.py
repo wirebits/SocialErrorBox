@@ -90,7 +90,6 @@ class ArduinoHIDConverter:
             elif key == "ICON":
                 icon = params[i+1]
                 i += 1
-    
             i += 1
     
         return title_text, msg_text, button, icon
