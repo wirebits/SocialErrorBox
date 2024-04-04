@@ -178,7 +178,7 @@ Loop
 ```
 Just save this code in the tool and run.<br>
 
-## Example - 4 : Run other commands or other scripts with simple error message box
+## Example - 4 : Run other commands or scripts with simple error message box
 ```
 SET runcode
 VAR game TITLE Skateboarder MSG Do you want to try again? BUTTON 3 ICON 32
