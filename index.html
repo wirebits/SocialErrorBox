@@ -1,0 +1,77 @@
+<!-- HTML File for SocialErrorBox-->
+<!-- Author - WireBits-->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Social Error Box</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+<div class="container">
+  <div class="title">Social Error Box</div>
+  <div class="textareaWrapper">
+    <div class="textareaContainer">
+        <textarea id="setVariableArea" class="vArea" placeholder="Enter Main Variable"></textarea>
+        <textarea id="setOtherVariableArea" class="ovArea" placeholder="Enter Code Variable"></textarea>
+        <textarea id="titleArea" class="tArea" placeholder="Enter Title"></textarea>
+        <textarea id="messageArea" class="mArea" placeholder="Enter Message"></textarea>
+        <textarea id="runArea" class="rArea" placeholder="Enter Run Command"></textarea>
+    </div>
+    <textarea id="outputArea" class="oArea" placeholder="Your VBScript Code"></textarea>
+  </div>
+  <div class="dropdownContainer">
+    <div class="iconItem">
+      <select id="iconSelect">
+        <option value="">Select Icon</option>
+        <option value="0">0</option>
+        <option value="16">16</option>
+        <option value="32">32</option>
+        <option value="48">48</option>
+        <option value="64">64</option>
+        <option value="4096">4096</option>
+      </select>
+    </div>
+    <div class="buttonItem">
+      <select id="buttonSelect">
+        <option value="">Select Button</option>
+        <option value="0">0</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+      </select>
+    </div>
+    <div class="infiniteItem">
+      <select id="infiniteSelect">
+        <option value="">Infinite Loop</option>
+        <option value="Yes">Yes</option>
+        <option value="No">No</option>
+      </select>
+    </div>
+	<div class="buttonConstantArea">
+      <select id="buttonConstSelect">
+        <option value="">Select Button Constant</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+		<option value="7">7</option>
+      </select>
+    </div>
+    <div class="finiteItem">
+      <textarea id="finiteloopArea" placeholder="Finite Loop"></textarea>
+    </div>
+  </div>
+  <div class="buttonContainer">
+    <button class="generate" onclick="generateScript()">Generate</button>
+    <button class="save" onclick="saveFile()">Save</button>
+    <button class="reset" onclick="resetAll()">Reset</button>
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

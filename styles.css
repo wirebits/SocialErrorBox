@@ -1,0 +1,171 @@
+/* 
+   CSS File for SocialErrorBox
+   Author - WireBits
+*/
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: white;
+    overflow: hidden;
+}
+
+.container {
+    background-color: black;
+    width: 100%;
+    max-width: 2000px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: white;
+    border: 2px solid orange;
+    padding: 10px;
+    border-radius: 5px;
+    letter-spacing: 5px;
+    display: inline-block;
+    max-width: 1000px;
+    white-space: nowrap;
+}
+
+.textareaWrapper {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-width: 1200px;
+    gap: 10px;
+}
+
+.textareaContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex: 1;
+}
+
+.textareaContainer textarea {
+    color: white;
+    resize: none;
+    width: 100%;
+    padding: 20px;
+    border-color: #87CEEB;
+    border-radius: 4px;
+    background: #000000;
+    font-family: "Courier New", Courier, monospace;
+    box-sizing: border-box;
+    height: 68px;
+}
+
+.tArea, .mArea, .vArea, .rArea, .ovArea {
+    max-width: 100%;
+}
+
+.oArea {
+    color: white;
+    resize: none;
+    padding: 20px;
+    border-color: #87CEEB;
+    border-radius: 4px;
+    background: #000000;
+    font-family: "Courier New", Courier, monospace;
+    box-sizing: border-box;
+    height: calc(68px * 5 + 10px * 4);
+    width: 583px;
+}
+
+button {
+    color: white;
+    padding: 14px 20px;
+    margin: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 25%;
+}
+
+.generate {
+    background-color: #00AB66;
+}
+
+.save {
+    background-color: #FFC72C;
+    color: black;
+}
+
+.reset {
+    background-color: #FF033E;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.buttonContainer {
+    display: flex;
+    justify-content: center;
+    width: 75%;
+}
+
+.dropdownContainer {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    width: 100%;
+    max-width: 1200px;
+    margin-bottom: 8px;
+	margin-top: 10px;
+    align-items: center;
+}
+
+.iconItem, .buttonItem, .infiniteItem, .finiteItem {
+    flex: 1 0 200px;
+    padding: 4px;
+    border: 1px solid black;
+}
+
+.iconItem select, .buttonItem select, .infiniteItem select, .buttonConstantArea select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #87CEEB;
+    background: #000000;
+    color: white;
+}
+
+.finiteItem {
+    flex: 1 0 138px;
+    padding: 4px;
+    border: 1px solid black;
+    margin-top: 5px;
+}
+
+.finiteItem textarea {
+    width: 80%;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #87CEEB;
+    background: #000000;
+    color: white;
+    height: 20px;
+    resize: none;
+}
+
+.buttonConstantArea {
+    flex: 1 0 138px;
+    padding: 4px;
+    border: 1px solid black;
+}
