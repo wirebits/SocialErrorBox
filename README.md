@@ -10,6 +10,13 @@ A web tool which generates error message boxes for social engineering.
 
 # This project is working on Windows only.
 
+# Meanings
+1. Main Variable - The varibale which hold the main code.
+2. Code Variable - The variable which hold that code which runs another code from main code.
+3. Title - Title of the box.
+4. Message - Message want to show in the box.
+5. Run Command - Name of that command which run by Code Variable.
+
 # Icon table
 | Icon              | Code |
 |-------------------|------|
